@@ -9,16 +9,16 @@ description: Bootstrap html css
 ---
 b 粗体
 i 斜体
-.text-muted：提示，使用浅灰色（#999）
-.text-primary：主要，使用蓝色（#428bca）
-.text-success：成功，使用浅绿色(#3c763d)
-.text-info：通知信息，使用浅蓝色（#31708f）
-.text-warning：警告，使用黄色（#8a6d3b）
-.text-danger：危险，使用褐色（#a94442）
-.text-left：左对齐
-.text-center：居中对齐
-.text-right：右对齐
-.text-justify：两端对齐
+<p>.text-muted：提示，使用浅灰色（#999）</p>
+<p>.text-primary：主要，使用蓝色（#428bca）</p>
+<p>.text-success：成功，使用浅绿色(#3c763d)</p>
+<p>.text-info：通知信息，使用浅蓝色（#31708f）</p>
+<p>.text-warning：警告，使用黄色（#8a6d3b）</p>
+<p>.text-danger：危险，使用褐色（#a94442）</p>
+<p>.text-left：左对齐</p>
+<p>.text-center：居中对齐</p>
+<p>.text-right：右对齐</p>
+<p>.text-justify：两端对齐</p>
 --------------------------------------------------------------------------
 ul li 有序列表
 ol li 无需列表
