@@ -26,7 +26,7 @@ description: Bootstrap html css
 <p>.list-unstyled 去除列表的风格（前面的符号与数字）</p>
 <p>.list-inline 把垂直列表换成水平列表，而且去掉项目符号（编号），保持水平显示。也可以说内联列表就是为制作水平导航而生。</p>
 dl class="dl-horizontal"给定义列表实现水平显示效果,用户双排表单提交用。<br>
-标签code：来显示单行内联代码。粉红色底纹<br>
+<pre><code></code></pre>：来显示单行内联代码。粉红色底纹<br>
 <pre></pre>来显示多行块代码，灰色底纹一块<br>
 pre class="pre-scrollable" 可以控制代码块区域最大高度为340px，一旦超出这个高度，就会在Y轴出现滚动条<br>
 <kbd></kbd>来显示用户输入代码，黑色背景白色文字<br>
