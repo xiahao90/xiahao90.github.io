@@ -4,7 +4,7 @@ title: 玩转Bootstrap-标题
 tags:
 - soap
 - php
-description: Bootstrap html css
+description: Bootstrap html css 摘自慕课网
 ---
 
 <div id="js-aticle-container" class="cwrap-autoheight aticle-container" style="width: 400px;">
@@ -31,14 +31,7 @@ description: Bootstrap html css
 <p>&nbsp;</p>
 
               </div>
-              <div class="code-tips">
-                <h3 class="code-tips-title">任务</h3>
-                <div class="co"><p>我也来试一试：在右侧代码编辑器中输入：</p>
-
-<pre class="code">&lt;h1&gt;我的第一个bootstrap标题&lt;/h1&gt;</pre>
-</div>
-                
-              </div>
+              
             </div>
         </div>
     </div>
