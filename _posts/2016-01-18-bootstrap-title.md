@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Íæ×ªBootstrap-±êÌâ
+title: çŽ©è½¬Bootstrap-æ ‡é¢˜
 tags:
-- Õª×ÔÄ½¿ÎÍø
+- æ‘˜è‡ªæ…•è¯¾ç½‘
 - html
 - css
 - Bootstrap
@@ -11,32 +11,32 @@ description: Bootstrap html css
 <div id="js-aticle-container" class="cwrap-autoheight aticle-container" style="width: 400px;">
     <div class="code-panel" id="J_PanelCode">
         <h2 class="code-head" id="J_CodeLang" data-lang="HTML">
-            ±êÌâ£¨Ò»£©
+            æ ‡é¢˜ï¼ˆä¸€ï¼‰
         </h2>
         <div class="code-description" id="J_CodeDescr">
             <div class="code-desc co">
                 <p>
-                    <span style="font-size: 13px; line-height: 1.6em;">BootstrapºÍÆÕÍ¨µÄHTMLÒ³ÃæÒ»Ñù£¬¶¨Òå±êÌâ¶¼ÊÇÊ¹ÓÃ±êÇ©&lt;h1&gt;µ½&lt;h6&gt;,Ö»²»¹ýBootstrap¸²¸ÇÁËÆäÄ¬ÈÏµÄÑùÊ½£¬Ê¹ÓÃÆäÔÚËùÓÐä¯ÀÀÆ÷ÏÂÏÔÊ¾µÄÐ§¹ûÒ»Ñù£¬¾ßÌå¶¨ÒåµÄ¹æÔò¿ÉÒÔÈçÏÂ±íËùÊ¾£º</span>
+                    <span style="font-size: 13px; line-height: 1.6em;">Bootstrapå’Œæ™®é€šçš„HTMLé¡µé¢ä¸€æ ·ï¼Œå®šä¹‰æ ‡é¢˜éƒ½æ˜¯ä½¿ç”¨æ ‡ç­¾&lt;h1&gt;åˆ°&lt;h6&gt;,åªä¸è¿‡Bootstrapè¦†ç›–äº†å…¶é»˜è®¤çš„æ ·å¼ï¼Œä½¿ç”¨å…¶åœ¨æ‰€æœ‰æµè§ˆå™¨ä¸‹æ˜¾ç¤ºçš„æ•ˆæžœä¸€æ ·ï¼Œå…·ä½“å®šä¹‰çš„è§„åˆ™å¯ä»¥å¦‚ä¸‹è¡¨æ‰€ç¤ºï¼š</span>
                 </p>
                 <p>
                     <span style="font-size: 13px; line-height: 1.6em;"><a href="http://img.mukewang.com/53acce330001429807730337.jpg"><img alt="" src="http://img.mukewang.com/53acce330001429807730337.jpg" style="width: 350px;"></a></span>
                 </p>
                 <p>
-                    Í¨¹ý±È½Ï¿ÉÒÔ·¢ÏÖ£¬Bootstrap±êÌâÑùÊ½½øÐÐÁËÒÔÏÂÏÔÖøµÄÓÅ»¯ÖØÖÃ£º
+                    é€šè¿‡æ¯”è¾ƒå¯ä»¥å‘çŽ°ï¼ŒBootstrapæ ‡é¢˜æ ·å¼è¿›è¡Œäº†ä»¥ä¸‹æ˜¾è‘—çš„ä¼˜åŒ–é‡ç½®ï¼š
                 </p>
                 <p>
-                    1¡¢ÖØÐÂÉèÖÃÁË<strong>margin-top</strong>ºÍ<strong>margin-bottom</strong>µÄÖµ£¬ &nbsp;<strong>h1~h3</strong>ÖØÖÃºóµÄÖµ¶¼ÊÇ<strong>20px</strong>£»<strong>h4~h6</strong>ÖØÖÃºóµÄÖµ¶¼ÊÇ<strong>10px¡£</strong><br>
-                    2¡¢ËùÓÐ±êÌâµÄÐÐ¸ß¶¼ÊÇ<strong>1.1</strong>£¨Ò²¾ÍÊÇfont-sizeµÄ1.1±¶£©,¶øÇÒÎÄ±¾ÑÕÉ«ºÍ×ÖÌå¶¼¼Ì³Ð¸¸ÔªËØµÄÑÕÉ«ºÍ×ÖÌå¡£<br>
-                    3¡¢¹Ì¶¨²»Í¬¼¶±ð±êÌâ×ÖÌå´óÐ¡£¬<strong>h1=36px£¬h2=30px£¬h3=24px£¬h4=18px£¬h5=14px</strong>ºÍ<strong>h6=12px¡£</strong>
+                    1ã€é‡æ–°è®¾ç½®äº†<strong>margin-top</strong>å’Œ<strong>margin-bottom</strong>çš„å€¼ï¼Œ &nbsp;<strong>h1~h3</strong>é‡ç½®åŽçš„å€¼éƒ½æ˜¯<strong>20px</strong>ï¼›<strong>h4~h6</strong>é‡ç½®åŽçš„å€¼éƒ½æ˜¯<strong>10pxã€‚</strong><br>
+                    2ã€æ‰€æœ‰æ ‡é¢˜çš„è¡Œé«˜éƒ½æ˜¯<strong>1.1</strong>ï¼ˆä¹Ÿå°±æ˜¯font-sizeçš„1.1å€ï¼‰,è€Œä¸”æ–‡æœ¬é¢œè‰²å’Œå­—ä½“éƒ½ç»§æ‰¿çˆ¶å…ƒç´ çš„é¢œè‰²å’Œå­—ä½“ã€‚<br>
+                    3ã€å›ºå®šä¸åŒçº§åˆ«æ ‡é¢˜å­—ä½“å¤§å°ï¼Œ<strong>h1=36pxï¼Œh2=30pxï¼Œh3=24pxï¼Œh4=18pxï¼Œh5=14px</strong>å’Œ<strong>h6=12pxã€‚</strong>
                 </p>
                 <p>
-                    ±êÌâµÄ¾ßÌåÔËÓÃ·Ç³£¼òµ¥£¬ºÍÎÒÃÇÆ½Ê±ÔËÓÃÊÇÒ»ÑùµÄ£¬Ê¹ÓÃ&lt;h1&gt;~&lt;h6&gt;±êÇ©£¬·Ö±ð±íÊ¾±êÌâÒ»ÖÁ±êÌâÁù£¬h ºóÃæµÄÊý×ÖÔ½´ó£¬±íÊ¾¼¶±ðÔ½Ð¡£¬ÎÄ±¾Ò²Ô½Ð¡¡£À´¿´Ò»¸ö¼òµ¥µÄÐ§¹û£ºÓÒ²à´úÂë±à¼­Æ÷ÖÐµÄ10-16ÐÐµÄ´úÂë¡£
+                    æ ‡é¢˜çš„å…·ä½“è¿ç”¨éžå¸¸ç®€å•ï¼Œå’Œæˆ‘ä»¬å¹³æ—¶è¿ç”¨æ˜¯ä¸€æ ·çš„ï¼Œä½¿ç”¨&lt;h1&gt;~&lt;h6&gt;æ ‡ç­¾ï¼Œåˆ†åˆ«è¡¨ç¤ºæ ‡é¢˜ä¸€è‡³æ ‡é¢˜å…­ï¼Œh åŽé¢çš„æ•°å­—è¶Šå¤§ï¼Œè¡¨ç¤ºçº§åˆ«è¶Šå°ï¼Œæ–‡æœ¬ä¹Ÿè¶Šå°ã€‚æ¥çœ‹ä¸€ä¸ªç®€å•çš„æ•ˆæžœï¼šå³ä¾§ä»£ç ç¼–è¾‘å™¨ä¸­çš„10-16è¡Œçš„ä»£ç ã€‚
                 </p>
                 <p>
-                    ÔÚBootstrapÖÐÎªÁËÈÃ·Ç±êÌâÔªËØºÍ±êÌâÊ¹ÓÃÏàÍ¬µÄÑùÊ½£¬»¹ÌØÒâ¶¨ÒåÁË<strong>.h1~.h6</strong>Áù¸öÀàÃû¡£<strong>ÈçÓÒ²à´úÂë±à¼­Æ÷ÖÐ &nbsp; 18-23ÐÐ´úÂëËùÊ¾£º</strong>
+                    åœ¨Bootstrapä¸­ä¸ºäº†è®©éžæ ‡é¢˜å…ƒç´ å’Œæ ‡é¢˜ä½¿ç”¨ç›¸åŒçš„æ ·å¼ï¼Œè¿˜ç‰¹æ„å®šä¹‰äº†<strong>.h1~.h6</strong>å…­ä¸ªç±»åã€‚<strong>å¦‚å³ä¾§ä»£ç ç¼–è¾‘å™¨ä¸­ &nbsp; 18-23è¡Œä»£ç æ‰€ç¤ºï¼š</strong>
                 </p>
                 <p>
-                    <span style="font-size: 13px; line-height: 1.6em;">¶Ô±ÈÁ½¸öÊ¾ÀýµÄÐ§¹ûÍ¼£¬¿ÉÒÔËµËûÃÇµÄÐ§¹ûÊÇÒ»Ä£Ò»ÑùµÄ¡£</span>
+                    <span style="font-size: 13px; line-height: 1.6em;">å¯¹æ¯”ä¸¤ä¸ªç¤ºä¾‹çš„æ•ˆæžœå›¾ï¼Œå¯ä»¥è¯´ä»–ä»¬çš„æ•ˆæžœæ˜¯ä¸€æ¨¡ä¸€æ ·çš„ã€‚</span>
                 </p>
                 <p>
                     &nbsp;
@@ -48,17 +48,17 @@ description: Bootstrap html css
 <div id="js-aticle-container" class="cwrap-autoheight aticle-container" style="width: 400px;">
     <div class="code-panel" id="J_PanelCode">
         <h2 class="code-head" id="J_CodeLang" data-lang="HTML">
-            ±êÌâ£¨¶þ£©
+            æ ‡é¢˜ï¼ˆäºŒï¼‰
         </h2>
         <div class="code-description" id="J_CodeDescr">
             <div class="code-desc co">
                 <p>
-                    <span style="line-height: 1.6em;">³ý´ËÖ®Íâ£¬ÎÒÃÇÔÚWebµÄÖÆ×÷ÖÐ£¬³£³£»áÅöµ½ÔÚÒ»¸ö±êÌâºóÃæ½ô¸ú×ÅÒ»ÐÐÐ¡µÄ¸±±êÌâ¡£ÔÚBootstrapÖÐËûÒ²¿¼ÂÇÁËÕâÖÖÅÅ°æÐ§¹û£¬Ê¹ÓÃÁË</span><strong style="line-height: 1.6em;">&lt;small&gt;</strong><span style="line-height: 1.6em;">±êÇ©À´ÖÆ×÷¸±±êÌâ¡£Õâ¸ö¸±±êÌâ¾ßÓÐÆä×Ô¼ºµÄÒ»Ð©¶ÀÌØÑùÊ½£º</span>
+                    <span style="line-height: 1.6em;">é™¤æ­¤ä¹‹å¤–ï¼Œæˆ‘ä»¬åœ¨Webçš„åˆ¶ä½œä¸­ï¼Œå¸¸å¸¸ä¼šç¢°åˆ°åœ¨ä¸€ä¸ªæ ‡é¢˜åŽé¢ç´§è·Ÿç€ä¸€è¡Œå°çš„å‰¯æ ‡é¢˜ã€‚åœ¨Bootstrapä¸­ä»–ä¹Ÿè€ƒè™‘äº†è¿™ç§æŽ’ç‰ˆæ•ˆæžœï¼Œä½¿ç”¨äº†</span><strong style="line-height: 1.6em;">&lt;small&gt;</strong><span style="line-height: 1.6em;">æ ‡ç­¾æ¥åˆ¶ä½œå‰¯æ ‡é¢˜ã€‚è¿™ä¸ªå‰¯æ ‡é¢˜å…·æœ‰å…¶è‡ªå·±çš„ä¸€äº›ç‹¬ç‰¹æ ·å¼ï¼š</span>
                 </p>
                 <p>
-                    <strong>1¡¢</strong>ÐÐ¸ß¶¼ÊÇ<strong>1</strong>£¬¶øÇÒ<strong>font-weight</strong>ÉèÖÃÁË<strong>normal</strong>±ä³ÉÁË³£¹æÐ§¹û£¨²»¼Ó´Ö£©£¬Í¬Ê±ÑÕÉ«±»ÉèÖÃÎª<strong>»ÒÉ«£¨#999£©¡£</strong><br>
-                    <strong>2¡¢</strong>ÓÉÓÚ<strong>&lt;small&gt;</strong>ÄÚµÄÎÄ±¾×ÖÌåÔÚ<strong>h1~h3</strong>ÄÚ£¬Æä´óÐ¡¶¼ÉèÖÃÎªµ±Ç°×ÖºÅµÄ<strong>65%£»</strong>¶øÔÚ<strong>h4~h6</strong>ÄÚµÄ×ÖºÅ¶¼ÉèÖÃÎªµ±Ç°×ÖºÅµÄ<strong>75%£»</strong><br>
-                    ÏêÏ¸´úÂëÇë²ÎÔÄ<strong>bootstrap.css</strong>ÎÄ¼þÖÐµÚ<strong>407ÐÐ~µÚ443</strong>ÐÐ¡£
+                    <strong>1ã€</strong>è¡Œé«˜éƒ½æ˜¯<strong>1</strong>ï¼Œè€Œä¸”<strong>font-weight</strong>è®¾ç½®äº†<strong>normal</strong>å˜æˆäº†å¸¸è§„æ•ˆæžœï¼ˆä¸åŠ ç²—ï¼‰ï¼ŒåŒæ—¶é¢œè‰²è¢«è®¾ç½®ä¸º<strong>ç°è‰²ï¼ˆ#999ï¼‰ã€‚</strong><br>
+                    <strong>2ã€</strong>ç”±äºŽ<strong>&lt;small&gt;</strong>å†…çš„æ–‡æœ¬å­—ä½“åœ¨<strong>h1~h3</strong>å†…ï¼Œå…¶å¤§å°éƒ½è®¾ç½®ä¸ºå½“å‰å­—å·çš„<strong>65%ï¼›</strong>è€Œåœ¨<strong>h4~h6</strong>å†…çš„å­—å·éƒ½è®¾ç½®ä¸ºå½“å‰å­—å·çš„<strong>75%ï¼›</strong><br>
+                    è¯¦ç»†ä»£ç è¯·å‚é˜…<strong>bootstrap.css</strong>æ–‡ä»¶ä¸­ç¬¬<strong>407è¡Œ~ç¬¬443</strong>è¡Œã€‚
                 </p>
                 <pre class="code">
 						h1 small,
@@ -101,13 +101,13 @@ description: Bootstrap html css
 				        
 				</pre>
                 <p>
-                    À´¼òµ¥¿´ÆäÊ¹ÓÃ·½·¨Óë×îÖÕÐ§¹û£º<strong>Èç´úÂëËùÊ¾£º</strong>
-                    <h1>Bootstrap±êÌâÒ»<small>ÎÒÊÇ¸±±êÌâ</small></h1>
-					<h2>Bootstrap±êÌâ¶þ<small>ÎÒÊÇ¸±±êÌâ</small></h2>
-					<h3>Bootstrap±êÌâÈý<small>ÎÒÊÇ¸±±êÌâ</small></h3>
-					<h4>Bootstrap±êÌâËÄ<small>ÎÒÊÇ¸±±êÌâ</small></h4>
-					<h5>Bootstrap±êÌâÎå<small>ÎÒÊÇ¸±±êÌâ</small></h5>
-					<h6>Bootstrap±êÌâÁù<small>ÎÒÊÇ¸±±êÌâ</small></h6>
+                    æ¥ç®€å•çœ‹å…¶ä½¿ç”¨æ–¹æ³•ä¸Žæœ€ç»ˆæ•ˆæžœï¼š<strong>å¦‚ä»£ç æ‰€ç¤ºï¼š</strong>
+                    <h1>Bootstrapæ ‡é¢˜ä¸€<small>æˆ‘æ˜¯å‰¯æ ‡é¢˜</small></h1>
+					<h2>Bootstrapæ ‡é¢˜äºŒ<small>æˆ‘æ˜¯å‰¯æ ‡é¢˜</small></h2>
+					<h3>Bootstrapæ ‡é¢˜ä¸‰<small>æˆ‘æ˜¯å‰¯æ ‡é¢˜</small></h3>
+					<h4>Bootstrapæ ‡é¢˜å››<small>æˆ‘æ˜¯å‰¯æ ‡é¢˜</small></h4>
+					<h5>Bootstrapæ ‡é¢˜äº”<small>æˆ‘æ˜¯å‰¯æ ‡é¢˜</small></h5>
+					<h6>Bootstrapæ ‡é¢˜å…­<small>æˆ‘æ˜¯å‰¯æ ‡é¢˜</small></h6>
                     
                 </p>
             </div>
