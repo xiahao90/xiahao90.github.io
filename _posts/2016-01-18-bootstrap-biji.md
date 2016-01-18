@@ -71,7 +71,7 @@ description: Bootstrap html css
 <p>.input-lg:让控件比正常大小更大</p>
 <p>.col-xs-6：设置输入框的宽度 后面的数字可以改变</p>
 
-<p>select multiple class="form-control"  多选下拉框<p>
+<p>&lt;select multiple class="form-control"&lt;  多选下拉框<p>
 
 .checkbox与radio   字父级别div 上面添加该名字的class则会对齐
 <div class="checkbox">
@@ -121,21 +121,21 @@ description: Bootstrap html css
   </div>
 </form>
 
-button按钮的样式
-.btn--primary：主要，背景蓝色（#428bca）
-.btn--success：成功，背景浅绿色(#3c763d)
-.btn--info：通知信息，背景浅蓝色（#31708f）
-.btn--warning：警告，背景黄色（#8a6d3b）
-.btn--danger：危险，背景褐色（#a94442）
+<p>button按钮的样式</p>
+<p>.btn--primary：主要，背景蓝色（#428bca）</p>
+<p>.btn--success：成功，背景浅绿色(#3c763d)</p>
+<p>.btn--info：通知信息，背景浅蓝色（#31708f）</p>
+<p>.btn--warning：警告，背景黄色（#8a6d3b）</p>
+<p>.btn--danger：危险，背景褐色（#a94442）</p>
 
 
-.disabled 表单禁用
+<p>.disabled 表单禁用</p>
 
-在制作表单时，不免要做表单验证。同样也需要提供验证状态样式，在Bootstrap框架中同样提供这几种效果。
-1、.has-warning:警告状态（黄色）
-2、.has-error：错误状态（红色）
-3、.has-success：成功状态（绿色）
-使用的时候只需要在form-group容器上对应添加状态类名。
+<p>在制作表单时，不免要做表单验证。同样也需要提供验证状态样式，在Bootstrap框架中同样提供这几种效果。</p>
+<p>1、.has-warning:警告状态（黄色）</p>
+<p>2、.has-error：错误状态（红色）</p>
+<p>3、.has-success：成功状态（绿色）</p>
+<p>使用的时候只需要在form-group容器上对应添加状态类名。</p>
 <form role="form">
   <div class="form-group has-success has-feedback">
     <label class="control-label" for="inputSuccess1">成功状态</label>
@@ -171,9 +171,9 @@ button按钮的样式
    <button class="btn btn-primary" type="button">正常按钮</button>
    <button class="btn btn-primary btn-sm" type="button">小型按钮.btn-sm</button>
    <button class="btn btn-primary btn-xs" type="button">超小型按钮.btn-xs</button>
-可用于a标签，span 标签
-. btn-block 按钮宽度充满整个父容器（width:100%）
-.disabled 或者 disabled=“disabled” ，将按钮禁用，后者禁用按钮的行为
+<p>可用于a标签，span 标签</p>
+<p>. btn-block 按钮宽度充满整个父容器（width:100%）</p>
+<p>.disabled 或者 disabled=“disabled” ，将按钮禁用，后者禁用按钮的行为</p>
 --------------------------------------------------------------------------------------------------
 图像
 <div class="row">
