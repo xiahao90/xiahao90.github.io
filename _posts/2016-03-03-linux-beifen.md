@@ -30,7 +30,8 @@ tar zcvf /www/web/mycms/public_html/beifen/mycms`date "+%Y%m%d"`.tar.gz /www/web
 find /www/web/mycms/public_html/beifen/ -mtime +5 -name '*.tar.gz' -exec rm -rf {} \;
 
 #上传到备份服务器
-ftp -n</</!
+ftp -n< < !
+#上面的小于符号与感叹号把空格删了
 open 服务器ip
 user 用户名 密码
 binary
