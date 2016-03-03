@@ -17,30 +17,30 @@ description: linux 备份 shell mysql 远程备份
 <br>
 2，用crontab实现自动运行写脚本，将代码与数据库上传到备份的服务器，就算机房爆炸都不怕。
 <br>
-20 14 * * * /www/web/laodongbaozhang/public_html/beifen/beifen.sh
+20 14 * * * /www/web/mycms/public_html/beifen/beifen.sh
 <pre class="code">
 #备份数据库
-mysqldump -uroot -pLdbz_2016 -hlocalhost -R laodongjianguan > /www/web/laodongbaozhang/public_html/beifen/laodongjianguan`date "+%Y%m%d"`.sql
+mysqldump -uroot -pLdbz_2016 -hlocalhost -R mycms > /www/web/mycms/public_html/beifen/mycms`date "+%Y%m%d"`.sql
 #删除5天以前的备份
-find /www/web/laodongbaozhang/public_html/beifen/ -mtime +5 -name '*.sql' -exec rm -rf {} \;
+find /www/web/mycms/public_html/beifen/ -mtime +5 -name '*.sql' -exec rm -rf {} \;
 
 #备份文件
-tar zcvf /www/web/laodongbaozhang/public_html/beifen/laodongjianguan`date "+%Y%m%d"`.tar.gz /www/web/laodongbaozhang/public_html/laodongjianguan
+tar zcvf /www/web/mycms/public_html/beifen/mycms`date "+%Y%m%d"`.tar.gz /www/web/mycms/public_html/mycms
 #删除5天以前的备份代码文件
-find /www/web/laodongbaozhang/public_html/beifen/ -mtime +5 -name '*.tar.gz' -exec rm -rf {} \;
+find /www/web/mycms/public_html/beifen/ -mtime +5 -name '*.tar.gz' -exec rm -rf {} \;
 
 #上传到备份服务器
 ftp -n</</!
-open 118.123.7.34
-user laodongbaozhang laodongbaozhang
+open 服务器ip
+user 用户名 密码
 binary
 cd /public_html/ftp_bak
-lcd /www/web/laodongbaozhang/public_html/beifen
+lcd /www/web/mycms/public_html/beifen
 prompt
-put laodongjianguan`date "+%Y%m%d"`.sql
-put laodongjianguan`date "+%Y%m%d"`.tar.gz
-delete laodongjianguan`date "+%Y%m%m" "5 days ago"`.sql
-delete laodongjianguan`date "+%Y%m%m" "5 days ago"`.tar.gz
+put mycms`date "+%Y%m%d"`.sql
+put mycms`date "+%Y%m%d"`.tar.gz
+delete mycms`date "+%Y%m%m" "5 days ago"`.sql
+delete mycms`date "+%Y%m%m" "5 days ago"`.tar.gz
 close
 bye
 !
