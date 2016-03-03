@@ -14,6 +14,7 @@ description: linux 备份 shell mysql 远程备份
 具体方案是：
 <br>
 1，写一个shell脚本，实现导出数据库，压缩项目文件。删除一段时间以前的备份
+<br>
 2，用crontab实现自动运行写脚本，将代码与数据库上传到备份的服务器，就算机房爆炸都不怕。
 <br>
 20 14 * * * /www/web/laodongbaozhang/public_html/beifen/beifen.sh
@@ -29,7 +30,7 @@ tar zcvf /www/web/laodongbaozhang/public_html/beifen/laodongjianguan`date "+%Y%m
 find /www/web/laodongbaozhang/public_html/beifen/ -mtime +5 -name '*.tar.gz' -exec rm -rf {} \;
 
 #上传到备份服务器
-ftp -n<<!
+ftp -n</</!
 open 118.123.7.34
 user laodongbaozhang laodongbaozhang
 binary
