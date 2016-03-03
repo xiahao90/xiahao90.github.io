@@ -48,10 +48,10 @@ bye
 </pre>
 
 在其中遇到了好几个问题：<br>
-<h2>1</h2>
+<h2>问题1</h2>
 ,先写了导出数据库的脚本的时候，发现直接用命令 sh 脚本  这样不能运行成功，因为是在网上复制的代码。后台经过反复的修改测试发现，把头部的#!/bin/bash  
 删掉就好了，这个是指此脚本使用的解释执行，说实话我并不知道为什么删了就可以运行成功，反正是成功，记得多测试。
-<h2>2</h2>
+<h2>问题2</h2>
 ，导出数据库的脚本写好了，直接sh 脚本文件，没有问题了，但是用crontab定时运行，导出的数据库为0kb。 经过查看crontan的日志文件提示：mysqldump: command not found。说明mysqldump 命令没找到，需要找出mysql的安装命令，将mysqldump注册到/usr/bin 下面。  <br>
 <font color"red">注意：</font>网上有很多的这个问题的解决方法，他们说的都不是适用于我这台服务器。
 首先得知道mysql命令或mysqldump命令的完整路径，可以使用find命令查找
@@ -62,5 +62,5 @@ bye
 上面这句就不对，应该是<br>
 <pre class="code">ln -fs /usr/local/mysql/bin/mysql/mysqldump /usr/bin</pre><br>
 这样才能将mysqldump注册到/usr/bin目录下<br>
-<h2>3</h2>
+<h2>问题3</h2>
 ,shell ftp上传的也有很多，我在网上复制代码怎么也运行不成功，也不知道为什么，最后参考网上的，用vi命令重新写了一篇才运行成功了。<br>
