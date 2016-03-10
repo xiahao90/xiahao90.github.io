@@ -15,6 +15,8 @@ description: linux php session session共享
 1，session默认是保存到c:\windows\temp目录下，但是通过修改php.ini中的session.save_path值可以改变session的保存路径。 
 如：session.save_path = "d:/wamp/tmp" 
 执行该代码后，就会在d:/wamp/tmp目录下，新增一个文件名为：sess_***的文件，打开之后，内容如下：name|s:8:"marcofly"; 
+<br>
 2，将session的默认保存目录改变到共享目录下则可以实现。
+<br>
 3，缺点是如果这台共享服务器宕机了，就挂了。
 <br>
