@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title: php将视频文件生成缩略图
 tags:
