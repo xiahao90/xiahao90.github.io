@@ -14,6 +14,8 @@ description: 极验 php 验证码 滑动验证码
 <br>
 此贴说的是基于<a href="http://www.geetest.com/">极验平台</a>做的图片滑动验证。
 <br>
+这是一种平台类的拖拽验证，以后可能会有人做源码类的。该平台还提供了一些统计功能，想了解的可以去细看。
+<br>
 1，下载sdk ：git clone https://github.com/GeeTeam/gt-php-sdk.git
 <br>
 2，初始化验证，就是显示验证码这一步，用ajax调用。
