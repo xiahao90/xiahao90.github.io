@@ -19,10 +19,11 @@ description: NFS 文件共享 共享mysql server_Linux教程
 <p>mkdir -p /opt/share&nbsp; </p>
 <p>并赋予权限777:</p>
 <p>chmod -R 777 /opt/share</p>
-<p>在/etc/exports文件中添加配置：</p>
+<p>在/etc/exports文件中添加配置：几条）</p>
 <p>/opt/share *(rw,no_root_squash)&nbsp; </p>
 <p>其中：/opt/share   是要共享的目录，</p>
 <p>*代表允许所有的网络段访问，</p>
+<p>（如果填写了ip网段地址，有几台服务器则添加</p>
 <p>rw是可读写权限,</p>
 <p>sync是资料同步写入内存和硬盘，</p>
 <p>no_root_squash是Ubuntu nfs客户端分享目录使用者的权限，如果客户端使用的是root用户，那么对于该共享目录而言，该客户端就具有root权限。
