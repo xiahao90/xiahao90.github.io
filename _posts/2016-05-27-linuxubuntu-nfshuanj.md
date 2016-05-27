@@ -12,7 +12,6 @@ description: NFS 文件共享 共享mysql server_Linux教程
 摘自网络：亲测<br>
 本人配置此功能的目的是：实现局域网服务器的负载均衡，代码同步发布。
 <br>
-<div id="content" style="overflow-x: hidden; word-break: break-all;"><div class="linux19"><script type="text/javascript" language="javaScript" src="/linuxfile/linux19.js"></script></div> <p align="center"><strong><a href="http://www.linuxidc.com/topicnews.aspx?tid=2" target="_blank" title="Ubuntu">Ubuntu</a> 12.04安装NFS server</strong></p>
 <p>首先安装nfs-kernel-server</p>
 <p>&#65279;&#65279;&#65279;&#65279;apt-get install nfs-kernel-server&nbsp; </p>
 <p>然后创建一个目录:</p>
