@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alex</title>
+	<script src="SHA1.js"></script>	
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="http://kindeditor.net/ke4/themes/default/default.css" />
+	<script charset="utf-8" src="http://kindeditor.net/ke4/kindeditor-min.js"></script>
+	<script charset="utf-8" src="http://kindeditor.net/ke4/lang/zh-CN.js"></script>
+	<style type="text/css">
+	 a{ text-decoration:none; }
+		.teet{
+			width: 100%;
+			margin-top:20px;
+		}
+		#sub{
+			margin-top:20px;
+			width: 100%;
+			height: 50px;
+		    background-color: #5690d2;
+		}
+		#newslist{
+			list-style-type: none;
+		    padding: 0px;
+		    margin: 0px;
+		}
+		#newslist li{
+	       background-repeat: no-repeat;
+		    background-position: 0px 5px;
+		    padding-left: 14px;
+		    line-height: 28px;
+		    background-color: #e6e8ea;
+		    margin-top: 15px;
+		}
+		#newslist li a{
+			float: right;
+		}
+		 #error_msg_qianli{
+         	width: 50%;
+		    float: left;
+		    margin-left: 25%;
+		    background-color: #ccc;
+		    text-align: center;
+		    height: 100px;
+		    line-height: 100px;
+		    color: red;
+		    position: fixed;
+		    z-index: 999;
+		    top: 60px;
+		    border-radius: 10px;
+		    font-size: 50px;
+		    display: none;
+        }
+
+	</style>
+	<script>
+		$(function() {
+			
+
+			google_ad_client = "ca-pub-7116729301372758";
+			/* 更多演示（728x90） */
+			google_ad_slot = "5052271949";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					resizeType : 1,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+				});
+			});
+
+			var appId='A6936230977376';
+			var appKey='FD4038C1-DE6B-F58D-E3C7-CB99B598A3C8';
+			var now = Date.now();
+			var appKey = SHA1(appId+"UZ"+appKey+"UZ"+now)+"."+now;
+			var headers={
+				        "X-APICloud-AppId": appId,
+				        "X-APICloud-AppKey": appKey
+				      };
+			//添加
+			$("#sub").click(function(){
+				var content=editor.html();
+				var title=$('input[name="title"]').val();
+				var info=$('input[name="info"]').val();
+				var id=$('input[name="id"]').val();
+				if(id==""){
+					//添加新闻
+					$.ajax({
+					      "url": "https://d.apicloud.com/mcm/api/news",
+					      "type": "POST",
+					      "cache": false,
+					      "headers": headers,
+					      "data":{
+					      	"title":title,
+					      	"info":info,
+					      	"content":content
+					      }
+					}).done(function (data, status, header) {
+						if(status=='success'){
+							messige_error_show("添加成功",true);
+					 		
+					 	}else{
+					 		alert(header.statusText);
+					 	}
+					}).fail(function (header, status, errorThrown) {
+				 		alert(errorThrown);
+					})
+				}else{
+					//b编辑
+						$.ajax({
+						      "url": "https://d.apicloud.com/mcm/api/news/"+id,
+						      "type": "POST",
+						      "cache": false,
+						      "headers": headers,
+						      "data":{
+						      	"title":title,
+						      	"info":info,
+						      	"content":content,
+						      	"_method":"PUT"
+						      }
+						}).done(function (data, status, header) {
+							if(status=='success'){
+								messige_error_show("编辑成功",true);
+						 		
+						 	}else{
+						 		alert(header.statusText);
+						 	}
+						}).fail(function (header, status, errorThrown) {
+					 		alert(errorThrown);
+						})
+				}
+				
+			})
+			$("#newslist").on('click','.news_edit,.news_delete',function(){
+				var flag=$(this).attr("class");
+				var id=$(this).attr("data-id");
+				if(flag=="news_edit"){
+					//编辑
+					$.ajax({
+					  "url": "https://d.apicloud.com/mcm/api/news/"+id,
+					  "cache": false,
+					  "headers": headers,
+					  "type": "GET"
+					}).success(function (data, status, header) {
+					 	if(status!='success'){
+					 		alert(header.statusText);
+					 		return;
+					 	}
+					 	editor.html(data.content);
+						$('input[name="title"]').val(data.title);
+						$('input[name="info"]').val(data.info);
+						$('input[name="id"]').val(data.id);
+						$(".news_title_info").html('编辑')
+					}).fail(function (header, status, errorThrown) {
+					  	alert(errorThrown);
+					})
+				}else if(flag=="news_delete"){
+					$.ajax({
+					      "url": "https://d.apicloud.com/mcm/api/news/"+id,
+					      "type": "POST",
+					      "cache": false,
+					      "headers": {
+					        "X-APICloud-AppId": appId,
+					        "X-APICloud-AppKey": appKey
+					      },
+					      "data": {"_method":"DELETE"}
+					}).done(function (data, status, header) {
+						if(status=="success"){
+							messige_error_show("删除成功",true);
+							
+						}
+					}).fail(function (header, status, errorThrown) {
+						alert(errorThrown);
+					})
+				}
+			})
+        	setTimeout(function(){
+				newsList();
+        	},500)
+			function newsList(){
+				var filter = {
+					"fields":{"id":"id","title":"title"},
+					"where":{},
+					"order":"updatedAt DESC",
+					"skip":0,
+					"limit":20000
+				}
+				$.ajax({
+				      "url": "https://d.apicloud.com/mcm/api/news?filter=" + encodeURIComponent(JSON.stringify(filter)),
+				      "type": "GET",
+				      "cache": false,
+				      "headers": headers
+				}).done(function (data, status, header) {
+					if(status=="success"){
+						for (var i = 0; i < data.length; i++) {
+							$("#newslist").append("<li>"+data[i].title+'<a class="news_edit" data-id="'+data[i].id+'" href="#">编辑</a><a href="#" class="news_delete" data-id="'+data[i].id+'">删除|</a></li>');
+						}
+					}else{
+						alert(header.statusText);
+					}
+				}).fail(function (header, status, errorThrown) {
+						alert(errorThrown);
+				})
+			}
+			function messige_error_show(text,isload){
+                time=1500;
+	            $('#error_msg_qianli').text(text).hide();
+	            $("#error_msg_qianli").fadeToggle(time/2);
+	            $("#error_msg_qianli").fadeToggle(time*1.5);
+
+	            if(isload==true){
+	            	setTimeout(function(){
+		            	location.reload();
+	            	},time)
+	            }
+	        }
+
+		});
+	</script>
+</head>
+<body>
+	<div id="error_msg_qianli">此处显示错误信息</div>
+	<div style="float: left;width: 20%">
+		<ul id="newslist">
+			
+		</ul>
+	</div>
+	<div style="float: right;width: 70%">
+		<h3><center class="news_title_info">添加</center></h3>
+		<div class="teet"><label style="width: 20%;"> 标题:</label><input style="width: 80%;height: 30px;" type="text" name="title"></div>
+		<div class="teet"><label style="width: 20%;"> 关键字:</label><input style="width: 80%;height: 30px;" type="text" name="info"></div>
+		<br>
+		<textarea name="content" style="width:100%;height:500px;"></textarea>
+		<input type="hidden" name="id" value="">
+		<button id="sub">提交</button>
+	</div>
+			
+</body>
+</html>
