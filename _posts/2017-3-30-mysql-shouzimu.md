@@ -8,6 +8,7 @@ description: mysql 首字母
 ---
 <div>
 	<div>此函数也是我在网上下载的，自己改了一下，直接上源码</div>
+	<pre>
 	<code>
 		DELIMITER ;;
 		DROP FUNCTION IF EXISTS `Fun_GetPY`;;
@@ -59,7 +60,9 @@ description: mysql 首字母
 		RETURN tmp_rs;
 		END;;
 	</code>
+	</pre>
 	<br>
 	在上一个图:
+	<br>
 	<img src="http://f.hiphotos.baidu.com/image/pic/item/960a304e251f95caac059563c0177f3e66095276.jpg">
 </div>
