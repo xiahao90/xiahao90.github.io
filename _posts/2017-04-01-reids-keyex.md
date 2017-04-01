@@ -72,9 +72,7 @@ Reading messages... (press Ctrl-C to quit)
 <p><span style="font-size: 16px;">说明：说明对过期Key信息的订阅是成功的。</span></p>
 <h2><span style="font-size: 16px;">&nbsp;五、PHPREDIS实现订阅Keyspace notification</span></h2>
 <p><span style="font-size: 16px;">&nbsp;Redis实例化类：(RedisInstance.class.php)</span></p>
-<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
 <pre>
-    <code>
         <?php
 
             class RedisInstance
@@ -103,7 +101,6 @@ Reading messages... (press Ctrl-C to quit)
                 }
 
             }
-    </code>
 </pre>
 <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div></div>
 <p><span style="font-size: 16px;">过期事件的订阅：（psubscribe.php）</span></p>
