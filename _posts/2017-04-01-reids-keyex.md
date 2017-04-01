@@ -73,34 +73,38 @@ Reading messages... (press Ctrl-C to quit)
 <h2><span style="font-size: 16px;">&nbsp;五、PHPREDIS实现订阅Keyspace notification</span></h2>
 <p><span style="font-size: 16px;">&nbsp;Redis实例化类：(RedisInstance.class.php)</span></p>
 <div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
-<pre><span style="font-size: 16px;">&lt;?<span style="color: #000000;">php
+<pre>
+    <code>
+        <?php
 
-</span><span style="color: #0000ff;">class</span><span style="color: #000000;"> RedisInstance
-{
-    </span><span style="color: #0000ff;">private</span> <span style="color: #800080;">$redis</span><span style="color: #000000;">;
+            class RedisInstance
+            {
+                private $redis;
 
-    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">function</span> __construct(<span style="color: #800080;">$host</span> = '121.41.88.209', <span style="color: #800080;">$port</span> = 63789<span style="color: #000000;">)
-    {
-        </span><span style="color: #800080;">$this</span>-&gt;redis = <span style="color: #0000ff;">new</span><span style="color: #000000;"> Redis();
-        </span><span style="color: #800080;">$this</span>-&gt;redis-&gt;connect(<span style="color: #800080;">$host</span>, <span style="color: #800080;">$port</span><span style="color: #000000;">);
-    }
+                public function __construct($host = '121.41.88.209', $port = 63789)
+                {
+                    $this->redis = new Redis();
+                    $this->redis->connect($host, $port);
+                }
 
-    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">function</span> expire(<span style="color: #800080;">$key</span> = <span style="color: #0000ff;">null</span>, <span style="color: #800080;">$time</span> = 0<span style="color: #000000;">)
-    {
-        </span><span style="color: #0000ff;">return</span> <span style="color: #800080;">$this</span>-&gt;redis-&gt;expire(<span style="color: #800080;">$key</span>, <span style="color: #800080;">$time</span><span style="color: #000000;">);
-    }
+                public function expire($key = null, $time = 0)
+                {
+                    return $this->redis->expire($key, $time);
+                }
 
-    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">function</span> psubscribe(<span style="color: #800080;">$patterns</span> = <span style="color: #0000ff;">array</span>(), <span style="color: #800080;">$callback</span><span style="color: #000000;">)
-    {
-        </span><span style="color: #800080;">$this</span>-&gt;redis-&gt;psubscribe(<span style="color: #800080;">$patterns</span>, <span style="color: #800080;">$callback</span><span style="color: #000000;">);
-    }
+                public function psubscribe($patterns = array(), $callback)
+                {
+                    $this->redis->psubscribe($patterns, $callback);
+                }
 
-    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">function</span><span style="color: #000000;"> setOption()
-    {
-        </span><span style="color: #800080;">$this</span>-&gt;redis-&gt;setOption(\Redis::OPT_READ_TIMEOUT,-1<span style="color: #000000;">);
-    }
+                public function setOption()
+                {
+                    $this->redis->setOption(\Redis::OPT_READ_TIMEOUT,-1);
+                }
 
-}</span></span></pre>
+            }
+    </code>
+</pre>
 <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div></div>
 <p><span style="font-size: 16px;">过期事件的订阅：（psubscribe.php）</span></p>
 <div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
@@ -219,6 +223,3 @@ www      </span><span style="color: #800080;">18605</span>  <span style="color: 
 </div>
 <p><span style="font-size: 16px;">这样的话就直接可以回调自己写的API接口啦！</span></p>
 
-
-
-		</div>
