@@ -24,7 +24,7 @@ google_analytics: UA-47728743-1
 gitment:
   enable: true
   githubID: xiahao90
-  repo: yourrepo
+  repo: my_Gitment
   ClientID: 7fee1732777136072dc2
   ClientSecret: 949ea75cb8b49d928a03e66c9a90e1b3353607c1
   lazy: true
