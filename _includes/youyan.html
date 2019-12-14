@@ -2913,7 +2913,7 @@ function renderComments(_ref2, instance) {
           alert(e);
         });
       };
-      initButton.innerText = 'Initialize Comments';
+      initButton.innerText = '来当初始化评论者';
       initHint.appendChild(initButton);
       errorBlock.appendChild(initHint);
     } else {
@@ -2930,7 +2930,7 @@ function renderComments(_ref2, instance) {
   } else if (!comments.length) {
     var emptyBlock = document.createElement('div');
     emptyBlock.className = 'gitment-comments-empty';
-    emptyBlock.innerText = 'No Comment Yet';
+    emptyBlock.innerText = '一条评论都没，真惨';
     container.appendChild(emptyBlock);
     return container;
   }
