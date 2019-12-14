@@ -3117,17 +3117,17 @@ function renderEditor(_ref3, instance) {
 
   var submitButton = container.querySelector('.gitment-editor-submit');
   submitButton.onclick = function () {
-    submitButton.innerText = 'Submitting...';
+    submitButton.innerText = '提交中...';
     submitButton.setAttribute('disabled', true);
     instance.post(textarea.value.trim()).then(function (data) {
       textarea.value = '';
       textarea.style.height = 'auto';
       submitButton.removeAttribute('disabled');
-      submitButton.innerText = 'Comment';
+      submitButton.innerText = '提交';
     }).catch(function (e) {
       alert(e);
       submitButton.removeAttribute('disabled');
-      submitButton.innerText = 'Comment';
+      submitButton.innerText = '提交';
     });
   };
 
