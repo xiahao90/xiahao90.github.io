@@ -10,7 +10,7 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://blog.zaiyiqi.xyz/
+url: http://www.mwifi123.com
 basurl: /
 title: 壮士
 author: 壮士
@@ -20,3 +20,11 @@ email: xiahao90@fexmail.com
 github: xiahao90
 twitter: xiahao90
 google_analytics: UA-47728743-1
+
+gitment:
+  enable: true
+  githubID: xiahao90
+  repo: yourrepo
+  ClientID: 7fee1732777136072dc2
+  ClientSecret: 949ea75cb8b49d928a03e66c9a90e1b3353607c1
+  lazy: true
