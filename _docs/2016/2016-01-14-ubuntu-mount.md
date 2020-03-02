@@ -1,10 +1,8 @@
 ---
-layout: post
-title: Ubuntu环境下挂载新硬盘  （摘自网络）
-tags:
-- ubuntu
-- 挂载
-description: 硬盘挂载 ubuntu
+title: Ubuntu环境下挂载新硬盘-摘自网络
+category: 2016
+order: 94
+date:2016-01-14
 ---
 <div>
 <div>&nbsp;<span style="color:rgb(50, 62, 50);font-family:Arial, Helvetica, simsun, u5b8bu4f53">Ubuntu系统的硬盘空间不够用了，需要增加新的硬盘扩容。将硬盘分区、格式化、自动挂载配置的整个过程记下来，备忘。</span><br/>

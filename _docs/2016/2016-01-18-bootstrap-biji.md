@@ -1,11 +1,8 @@
 ---
-layout: post
 title: Bootstrap-个人基础笔记
-tags:
-- html
-- css
-- Bootstrap
-description: Bootstrap html css
+category: 2016
+order: 92
+date:2016-01-18
 ---
 <p>b 粗体</p>
 <p>i 斜体</p>

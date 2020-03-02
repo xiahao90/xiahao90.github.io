@@ -1,13 +1,8 @@
 ---
-layout: post
 title: 怎样设置才能允许外网访问MySQL
-tags:
-- mysql
-- 外网访问mysql
-- 共享mysql
-- 共享数据库
-- 限制登陆
-description: mysql 外网访问muysql 共享mysql 共享数据库 限制登陆
+category: 2016
+order: 84
+date:2016-05-27
 ---
 <br>
 摘自网络：<br>

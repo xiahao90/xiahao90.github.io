@@ -1,12 +1,8 @@
 ---
-layout: post
 title: 玩转Bootstrap-段落
-tags:
-- 摘自慕课网
-- html
-- css
-- Bootstrap
-description: Bootstrap html css
+category: 2016
+order: 91
+date:2016-01-18
 ---
   <div id="js-aticle-container" class="cwrap-autoheight aticle-container" style="width: 400px;">
             <div class="code-panel" id="J_PanelCode">

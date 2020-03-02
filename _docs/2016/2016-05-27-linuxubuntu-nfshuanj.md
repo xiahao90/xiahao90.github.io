@@ -1,12 +1,8 @@
 ---
-layout: post
 title: Ubuntu 12.04安装NFS server
-tags:
-- NFS
-- 文件共享
-- 共享mysql
-- server_Linux教程
-description: NFS 文件共享 共享mysql server_Linux教程 
+category: 2016
+order: 85
+date:2016-05-27
 ---
 <br>
 摘自网络：亲测<br>

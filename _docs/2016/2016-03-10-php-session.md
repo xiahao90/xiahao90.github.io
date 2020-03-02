@@ -1,12 +1,8 @@
 ---
-layout: post
 title: 多服务器session共享
-tags:
-- linux
-- php
-- session
-- session共享
-description: linux php session session共享
+category: 2016
+order: 88
+date:2016-03-10
 ---
 此方法实用于多服务器在局域网络环境下，如是多服务器在多地区下，则研究其他方法。
 <br>

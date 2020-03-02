@@ -1,13 +1,8 @@
 ---
-layout: post
 title: linux-自动远程备份mysql与文件
-tags:
-- linux
-- 备份
-- shell
-- mysql
-- 远程备份
-description: linux 备份 shell mysql 远程备份
+category: 2016
+order: 89
+date:2016-03-03
 ---
 最近我遇到一个项目，甲方是政府的。他们要采用自购托管方式的服务器，以前都是用的云服务器系列。我做了一个项目的远程自动备份以防止服务器宕机。
 <br>

@@ -1,11 +1,8 @@
 ---
-layout: post
 title: apache配置端口指向目录
-tags:
-- lunux
-- apache
-- 端口指向目录 
-description: linux apche 端口配置
+category: 2016
+order: 97
+date:2016-01-14
 ---
 <div>
 <div>&nbsp;<span style="font-family:Helvetica, Tahoma, Arial, sans-serif">Apache2.2\conf\httpd.conf与Apache2.2\conf\extra\httpd-vhosts.conf两个文件的操作</span><br/>

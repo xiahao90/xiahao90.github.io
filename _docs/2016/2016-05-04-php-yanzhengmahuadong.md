@@ -1,12 +1,8 @@
 ---
-layout: post
 title: php极验滑动验证码
-tags:
-- 极验
-- php
-- 验证码
-- 滑动验证码
-description: 极验 php 验证码 滑动验证码
+category: 2016
+order: 86
+date:2016-05-04
 ---
 在滑动验证码刚刚出现的时候，我了解了此项技术。
 <br>

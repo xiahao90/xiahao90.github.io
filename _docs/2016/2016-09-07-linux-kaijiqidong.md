@@ -1,10 +1,8 @@
 ---
-layout: post
-title: Linux中设置服务自启动的三种方式（摘自网络）
-tags:
-- linux
-- 开机启动
-description: linux 开机启动
+title: Linux中设置服务自启动的三种方式-摘自网络
+category: 2016
+order: 83
+date:2016-07-07
 ---
 <div id="cnblogs_post_body"><p>有时候我们需要Linux系统在开机的时候自动加载某些脚本或系统服务</p>
 <p>主要用三种方式进行这一操作：</p>

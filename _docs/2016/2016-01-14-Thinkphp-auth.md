@@ -1,11 +1,8 @@
 ---
-layout: post
 title: Thinkphp Auth后台权限 
-tags:
-- php
-- Thinkphp
-- Auth后台权限 
-description: php Auth Thinkphp 权限
+category: 2016
+order: 95
+date:2016-01-14
 ---
 Auth 类是ThinkPHP框架代码仓库中的一个类库，主要作用是thinkphp框架中自定义类与方法的的访问控制，当然还有其他更深的作用与功能，我也没用过。现在只说比较常用的一些使用方法。<br>
 <h1>其原理是：</h1><br>

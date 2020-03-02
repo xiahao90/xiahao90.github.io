@@ -1,10 +1,8 @@
 ---
-layout: post
 title: php消息队列（RabbitMQ使用）
-tags:
-- php
-- 消息队列
-description: php 消息队列 php消息队列 RabbitMQ
+category: 2016
+order: 98
+date:2016-01-12
 ---
 <div>&nbsp;网上有很多安装教程：<br/>
 <a href="http://blog.csdn.net/i_bruce/article/details/40300125" target="_blank" title="http://blog.csdn.net/i_bruce/article/details/40300125">http://blog.csdn.net/i_bruce/article/details/40300125</a><br/>
