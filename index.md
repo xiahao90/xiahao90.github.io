@@ -11,5 +11,5 @@ title: 主页
 
 **你可以通过以下方式联系到我;**
 
-<span><a target="_blank" href="http://github.com/xiahao90">github</i>  </a><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=939065267&site=qq&menu=yes">qq</i>  </a><a target="_blank" href="{{ site.baseurl }}static/img/weixin.jpg">微信</i>  </a><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=-4eWnpeekMbPv5mQh5KelpPRnJCS">邮箱</a>
+<span><a target="_blank" href="http://github.com/xiahao90">github</a> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=939065267&site=qq&menu=yes">qq</a> <a target="_blank" href="{{ site.baseurl }}static/img/weixin.jpg">微信</a> <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=-4eWnpeekMbPv5mQh5KelpPRnJCS">邮箱</a>
 </span>
