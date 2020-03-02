@@ -1,38 +1,17 @@
 ---
-title: Welcome
+title: 主页
 ---
 
-This is the **Edition** template from [CloudCannon](http://cloudcannon.com/).
-**Edition** is perfect for documenting your product, application or service.
-It's populated with example content to give you some ideas.
 
-ChatApp is a fictional chat application for sending messages and media to others.
-Teams and friend groups would use ChatApp to stay up to date if it existed.
-
-> [Sign up](http://example.com/signup) or learn more about ChatApp at [example.com](http://example.com/).
-
-### Getting Started
-
-Getting a message sent is quick and easy with ChatApp:
-
-1. Sign up for an account
-2. Add your friends from their email addresses
-3. Type a message or send a photo
-
-> Feel free to send us a message at [feedback@example.com](mailto:feedback@example.com) with your feedback.
-
-### Features
-
-Explore more of ChatApp by reading about our features:
-
-#### Media
-
-Send images, videos and other media to people. Sources include your computer, phone and Facebook.
-
-#### Contact Syncing
-
-Sync your contact list with your phone and/or Facebook contacts. Never lose your contacts between devices again!
-
-#### Devices
-
-ChatApp is available everywhere. Find out how to set it up on your all your devices.
+<h3>我是<strong>壮士</strong>，一名<strong>php程序员</strong>;</h3>
+<h3>我从<strong>2013年7月</strong>开始进入这个行业;</h3>
+<h3>我喜欢编程，在做程序员以前我在其他4个行业里面呆过，直到遇到编程;</h3>
+<h3>你可以通过以下方式联系到我;</h3>
+<div class="social">
+	<h4>
+	  <a target="_blank" href="http://github.com/xiahao90"><i class="fa fa-github"></i></a>
+	  <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=939065267&site=qq&menu=yes"><i class="fa fa-qq"></i></a>
+	  <a target="_blank" href="{{ site.baseurl }}static/img/weixin.jpg"><i class="fa fa-weixin"></i></a>
+	  <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=-4eWnpeekMbPv5mQh5KelpPRnJCS"><i class="fa fa-envelope-o"></i></a>
+	</h4>
+</div>
