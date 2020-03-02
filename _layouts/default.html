@@ -46,18 +46,22 @@
 				</ul>
 
 				<ul>
-					{% assign grouped1 = site.docs | group_by: 'category' %}
-					{% assign grouped = grouped1 | sort: 'category', 'last' %}
-					{% for group in grouped %}
-						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-							{% assign items = group.items | sort: 'order' %}
-							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
-							<ul>
-								{% for item in items %}
-									<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-								{% endfor %}
-							</ul>
-						</li>
+					{% assign my_array = "2030|2029|2028|2027|2026|2025|2024|2023|2022|2021|2020|2019|2018|2017|2016" | split: "|" %}
+					{% for weight my_array %}
+						{% assign grouped = site.docs | group_by: 'category'%}
+						{% for group in grouped %}
+						{% if group.name == weight %}
+							<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+								{% assign items = group.items | sort: 'order' %}
+								<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
+								<ul>
+									{% for item in items %}
+										<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+									{% endfor %}
+								</ul>
+							</li>
+						{% endif %}
+						{% endfor %}
 					{% endfor %}
 				</ul>
 
