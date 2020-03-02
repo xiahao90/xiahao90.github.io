@@ -1,10 +1,8 @@
 ---
-layout: post
 title: mysql获取中文字符串首字母拼音
-tags:
-- mysql
-- 首字母
-description: mysql 首字母
+category: 2017
+order: 100
+date:2017-03-30
 ---
 <div>
 	<div>此函数也是我在网上下载的，自己改了一下，直接上源码</div>

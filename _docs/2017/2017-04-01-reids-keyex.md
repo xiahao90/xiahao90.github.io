@@ -1,11 +1,8 @@
 ---
-layout: post
 title: Redis实践操作之—— keyspace notification（键空间通知）（key过期通知，定时通知功能）
-tags:
-- redis
-- key过期通知
-- 定时通知
-description: redis key过期通知 定时通知
+category: 2017
+order: 99
+date:2017-04-01
 ---
 <div>
 	<div>摘自网络<a href="http://www.cnblogs.com/tinywan/p/5903988.html">http://www.cnblogs.com/tinywan/p/5903988.html</a></div>
