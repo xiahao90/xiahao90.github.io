@@ -61,10 +61,16 @@
 				</ul>
 
 				<ul>
-					<li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
+					<!-- <li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
 						{% assign changelog = site.html_pages | where: 'url', '/changelog/' | first %}
 						<a href="{{ site.baseurl }}/changelog/">{{ changelog.title }}</a>
+					</li> -->
+					<li class="nav-item top-level">
+						<a target="_blank" href="http://www.beian.miit.gov.cn/">蜀ICP备16028736号-1</a>
+						<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257150248'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257150248%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+	  					<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
 					</li>
+					
 				</ul>
 			</nav>
 		</header>
@@ -84,6 +90,12 @@
 			document.getElementById("open-nav").addEventListener("click", function () {
 				document.body.classList.toggle("nav-open");
 			});
+		</script>
+		 <script type="text/javascript">
+		  window.s=document.createElement("script");
+		  s.src="https://api.emblemcode.com/js.php?"
+		  +Math.random();(document.body||document.
+		  documentElement).appendChild(s);
 		</script>
 	</body>
 </html>
