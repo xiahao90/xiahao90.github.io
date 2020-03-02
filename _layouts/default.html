@@ -46,7 +46,8 @@
 				</ul>
 
 				<ul>
-					{% assign grouped = site.docs | sort: 'category', 'last' | group_by: 'category' %}
+					{% assign grouped1 = site.docs | group_by: 'category' %}
+					{% assign grouped = grouped1 | sort: 'category', 'last' %}
 					{% for group in grouped %}
 						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
 							{% assign items = group.items | sort: 'order' %}
