@@ -47,7 +47,7 @@
 
 				<ul>
 					{% assign my_array = "2030|2029|2028|2027|2026|2025|2024|2023|2022|2021|2020|2019|2018|2017|2016" | split: "|" %}
-					{% for weight my_array %}
+					{% for weight in my_array %}
 						{% assign grouped = site.docs | group_by: 'category'%}
 						{% for group in grouped %}
 						{% if group.name == weight %}
