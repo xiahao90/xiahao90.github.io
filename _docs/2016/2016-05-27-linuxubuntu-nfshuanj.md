@@ -2,7 +2,7 @@
 title: Ubuntu 12.04安装NFS server
 category: 2016
 order: 85
-date:2016-05-27
+date: 2016-05-27
 ---
 <br>
 摘自网络：亲测<br>

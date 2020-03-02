@@ -2,7 +2,7 @@
 title: 玩转Bootstrap-段落
 category: 2016
 order: 91
-date:2016-01-18
+date: 2016-01-18
 ---
   <div id="js-aticle-container" class="cwrap-autoheight aticle-container" style="width: 400px;">
             <div class="code-panel" id="J_PanelCode">

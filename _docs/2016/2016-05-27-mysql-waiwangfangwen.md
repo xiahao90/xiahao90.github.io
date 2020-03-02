@@ -2,7 +2,7 @@
 title: 怎样设置才能允许外网访问MySQL
 category: 2016
 order: 84
-date:2016-05-27
+date: 2016-05-27
 ---
 <br>
 摘自网络：<br>

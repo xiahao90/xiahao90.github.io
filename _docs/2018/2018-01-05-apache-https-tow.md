@@ -1,8 +1,8 @@
----
+ ---
 title: Apache httpd设置HTTPS双向认证
 category: 2018
 order: 100
-date:2018-01-05
+date: 2018-01-05
 ---
 <div>原文地址<a href="http://blog.csdn.net/agonie201218/article/details/54866268">http://blog.csdn.net/agonie201218/article/details/54866268</a></div>
 <div id="article_content" class="article_content tracking-ad" data-mod="popu_307" data-dsm="post">
