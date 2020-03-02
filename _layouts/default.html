@@ -46,7 +46,7 @@
 				</ul>
 
 				<ul>
-					{% assign grouped = site.docs | group_by: 'category' %}
+					{% assign grouped = site.docs | group_by: 'category' | sort: 'category', 'last' %}
 					{% for group in grouped %}
 						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
 							{% assign items = group.items | sort: 'order' %}
@@ -73,7 +73,7 @@
 			<div class="page-header">
 				<h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
 				<h3>{{ page.title }}</h3>
-				<h3>{{ page.date }}</h3>
+				<h4>{{ page.date  | date: '%Y-%b-%d'}}</h4>
 			</div>
 			<article class="content">
 				{{ content }}
