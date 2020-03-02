@@ -1,30 +1,79 @@
-# top level stuff you probably don't need to touch
-highlighter: pygments
-markdown: rdiscount
-rdiscount:
-  extensions: [smart]
-permalink: /:title.html
-paginate: 5
-port: 3000
-safe: true
+# ----
+# Site
 
+title: Edition Template
+url: "https://long-pig.cloudvent.net"
+baseurl:
+google_analytics_key:
+show_full_navigation: true
 
-# edit here to achieve your personal greatness
-url: http://www.mwifi123.com
-basurl: /
-title: 壮士
-author: 壮士
-description: Personal blog and resume
-avatar: fabio.png
-email: xiahao90@fexmail.com
-github: xiahao90
-twitter: xiahao90
-google_analytics: UA-47728743-1
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Product documentation template for Jekyll.
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: Edition Template
+  links:
+    - https://github.com/CloudCannon/edition-jekyll-template
 
-gitment:
-  enable: true
-  githubID: xiahao90
-  repo: my_Gitment
-  ClientID: 7fee1732777136072dc2
-  ClientSecret: 949ea75cb8b49d928a03e66c9a90e1b3353607c1
-  lazy: true
+# -----
+# Build
+
+timezone: Etc/UTC
+
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+collections:
+  docs:
+    title: Documentation
+    permalink: /:path/
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      seo:
+        type: Article
+      _comments:
+        category: Group navigation links with this field
+        order: Used to sort links in the navigation
+      _options:
+        content:
+          width: 800
+          height: 2000
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      _comments:
+        type: Marks the impact of this release
+
+# -----------
+# CloudCannon
+
+types:
+  - minor
+  - major
