@@ -20,7 +20,7 @@ date: 2017-07-04
 		    page = urllib.request.urlopen(url)  
 		    html=page.read()  
 		    return html
-		#截取网页内容用的，本人不擅长写正则。
+		#截取网页内容用的。
 		def get_list(text,str1,str2,pd):  
 		    array_1=text.split(str1)
 		    del array_1[0]
